@@ -9,6 +9,13 @@ body {
 
 /* HEADER */
 
+nav .navbar {
+  transition: 0.5s all;
+}
+
+nav .navbar .logo{
+    padding:0rem 1rem;
+}
 .logo-img {
   width: 100%;
   height: 100%;
@@ -22,12 +29,9 @@ body {
 nav .navbar-brand {
   font-size: 1.5rem;
   padding-left: 0.5rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
-nav .navbar {
-  transition: 0.5s all;
-}
 
 .navbarScroll.navbarDark {
   background-color: black;
@@ -42,7 +46,8 @@ nav .navbar-nav li a {
   color: #aaa9a9;
 }
 
-nav .navbar-nav li a:hover {
+nav .navbar-nav li a:hover,
+nav .navbar-nav li a:active {
   font-size: 1.3rem;
   color: #ece9e9;
 }
@@ -81,16 +86,17 @@ nav .navbar-nav li a:hover {
 
 .hero-text a {
   font-size: 1.2rem;
-  border: 2px solid #fff;
-  padding: 0.4rem 1.7rem;
-  background-color: transparent;
+  border: 2px solid #46c8cd;
+  padding: 0.4rem 1.9rem;
+  background-color: #46c8cd;
   color: #fff;
   margin: 0.6rem 0rem;
   border-radius: 2rem;
+  font-weight: 600;
 }
 .hero-text a:hover {
   color: #000;
-  background-color: #fff;
+  background-color: #47e4ea;
   box-shadow: blueviolet 0px 2px 4px 0px, blueviolet 0px 2px 16px 0px;
 }
 
@@ -172,6 +178,11 @@ nav .navbar-nav li a:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: #3b3b3b;
 }
+
+#contact form i{
+    color:#fff;
+    padding-right: .2rem;
+}
 #contact .row input,
 #contact .row textarea {
   background-color: rgb(245 245 245);
@@ -199,7 +210,23 @@ nav .navbar-nav li a:hover {
   font-size: 1.4rem;
 }
 
+
+/* FOOTER */
 footer hr {
-  width: 82%;
+  width: 100%;
   margin: auto;
 }
+
+footer .social-links ul li{
+    list-style-type: none;
+    padding:0rem 1rem;
+}
+footer .social-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.4rem;
+}
+footer .social-links ul li a:hover{
+   color:#46c8cd
+}
+
