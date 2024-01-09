@@ -270,6 +270,12 @@ nav .menu{
   background-color: #46c8cd;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+@media only screen and (max-width: 412px){
+  #contact .row button {
+    padding: 0.4rem ;
+    font-size: 1rem;
+  }
+}
 
 #contact h5 {
   font-size: 1.4rem;
