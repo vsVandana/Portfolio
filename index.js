@@ -14,7 +14,7 @@ $(document).ready(function(){
 // Download CV
     $("#downloadCV").click(function (e) {
         e.preventDefault();          
-        window.open("resume.pdf", "_blank")
+        window.open("Vandana Sharma's resume.pdf", "_blank")
     });
 
     // ADD DARK BACKGROUND AT SCROLL
@@ -29,6 +29,11 @@ $(document).ready(function(){
         }
     }
 
+    $(document).ready(function () {
+        $('.navbar-toggler').on('click', ()=>{
+            $('.navbar-collapse').toggleClass('show');
+        })
+    })
 
 
 
