@@ -36,7 +36,19 @@ $(document).ready(function(){
     })
 
 
-
+    $(document).ready(function() {
+        $(window).scroll(function() {
+          var scrollDistance = $(window).scrollTop();
+      
+          // Adjust the sections and offsets based on your layout
+          $('section').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+              $('.navbar-nav a.active').removeClass('active');
+              $('.navbar-nav a').eq(i).addClass('active');
+            }
+          });
+        }).scroll();
+      });
 
 
 
